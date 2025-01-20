@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="px-12 pt-5 bg-gradient-to-b from-black to-transparent flex items-center justify-between font-poppins fixed w-[100%] bg-opacity-5 z-10 top-0">
+    <div className="px-12 pt-5 bg-gradient-to-b from-black to-transparent flex items-center justify-between font-poppins fixed w-[100%] bg-opacity-5 z-10 top-0 sm:">
       <img src={logo} alt="" className="h-20" />
       <div className="flex gap-4 items-center">
         <span className="text-white text-md">Menu</span>

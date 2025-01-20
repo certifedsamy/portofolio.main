@@ -28,13 +28,13 @@ const Skills = () => {
     };
   }, []);
   return (
-    <div className="flex justify-between px-48 py-72">
+    <div className="sm:flex justify-between sm:px-48 sm:py-72 mt-[500px] px-16">
       <motion.span
         ref={ref}
         initial={{ opacity: 0, x: -140 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -140 }} // Animate based on visibility
         transition={{ duration: 1.4 }} // Duration of the animation
-        className="text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic"
+        className="sm:text-3xl text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic"
       >
         Offers
       </motion.span>
@@ -43,15 +43,15 @@ const Skills = () => {
         initial={{ opacity: 0, x: 140 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 140 }} // Animate based on visibility
         transition={{ duration: 1.4 }} // Duration of the animation
-        className="w-[80%] flex flex-wrap gap-10"
+        className="sm:w-[80%] flex flex-wrap gap-10"
       >
         {skills.map((s, i) => (
-          <div className=" h-auto flex flex-col gap-5 w-[30%] items-start">
+          <div className="mt-10 pb-10 h-auto flex flex-col gap-5 sm:w-[30%] w-[40%] items-start">
             <img src={s.img} alt="" className="h-10" />
-            <span className="text-2xl font-poppins font-semibold text-white">
+            <span className="sm:text-2xl text-xl font-poppins font-semibold text-white">
               {s.title}
             </span>
-            <p className="text-xl font-poppins font-normal italic text-white opacity-50">
+            <p className="sm:text-xl font-poppins font-normal italic text-white opacity-50">
               {s.text}
             </p>
           </div>

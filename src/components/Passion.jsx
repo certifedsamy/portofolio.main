@@ -52,17 +52,19 @@ const Passion = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-5 ml-48 pt-60">
+    <div className="flex flex-col sm:gap-5 gap-2 sm:pt-60 pt-40 sm:ml-48 p-16">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }} // Animate based on visibility
         transition={{ duration: 1.2, delay: 0.9 }} // Duration of the animation
-        className="flex items-center gap-5 font-poppins font-semibold"
+        className="sm:flex items-center text-center gap-5 font-poppins font-semibold "
       >
-        <h1 className=" text-5xl text-[#9d9d9d]">I’m a passionate</h1>
+        <h1 className=" text-4xl sm:text-5xl text-[#9d9d9d]">
+          I’m a passionate
+        </h1>
         <h1
-          className={`text-5xl text-[#d3aa85] transition-opacity duration-500 ease-in-out ${
+          className={`text-2xl sm:text-5xl text-[#d3aa85] transition-opacity duration-500 ease-in-out ${
             fade ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -74,9 +76,9 @@ const Passion = () => {
         initial={{ opacity: 0, y: 40 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }} // Animate based on visibility
         transition={{ duration: 1.2, delay: 1.2 }} // Duration of the animation
-        className="font-poppins font-medium"
+        className="font-poppins font-medium text-center"
       >
-        <h1 className=" text-5xl text-[#9d9d9d] italic">
+        <h1 className=" text-lg sm:text-5xl text-[#9d9d9d] italic">
           Looking for collaboration
         </h1>
       </motion.div>

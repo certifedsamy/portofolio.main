@@ -37,7 +37,7 @@ const Offers = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 1.2, delay: 1.5 }}
-      className=" px-48 mt-32 offers-grid pb-10 font-poppins"
+      className=" px-10 sm:px-48 mt-32 offers-grid pb-10 font-poppins"
     >
       {offers.map((o, i) => (
         <div className="offer-item cursor-pointer rounded-3xl overflow-hidden group">
@@ -46,7 +46,7 @@ const Offers = () => {
             alt=""
             className="relative hover:scale-110 transition-all duration-500"
           />
-          <span className="absolute text-white text-xl py-8 w-[80%] rounded-xl px-8 bottom-0 bg-black bg-opacity-5 backdrop-blur-md  transform translate-y-full transition-transform duration-300 group-hover:-translate-y-5">
+          <span className="absolute text-white text-[10px] sm:text-xl sm:py-8 sm:w-[80%] w-auto rounded-xl sm:px-8 bottom-0 bg-black bg-opacity-5 backdrop-blur-md  transform translate-y-full transition-transform duration-300 group-hover:-translate-y-5">
             {o.domain}{" "}
           </span>
         </div>

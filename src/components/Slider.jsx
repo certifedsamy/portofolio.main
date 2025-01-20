@@ -35,9 +35,9 @@ const Slider = () => {
       initial={{ opacity: 0, x: 40 }} // Initial state before animation
       animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }} // Animate based on visibility
       transition={{ duration: 1.4 }} // Duration of the animation
-      className="py-28 w-[74.5%] flex gap-28 absolute ml-48"
+      className="py-28 w-[74.5%] flex sm:gap-28 gap-10 absolute sm:ml-48 pl-16 w-full"
     >
-      <span className="text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic">
+      <span className="text-3xl sm:text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic">
         Clients
       </span>
       <Marquee
@@ -47,7 +47,7 @@ const Slider = () => {
         className="cursor-pointer flex"
       >
         {sponsors.map((s, i) => (
-          <img src={s.img} alt="" className="h-6 ml-28 opacity-20" />
+          <img src={s.img} alt="" className="h-6 sm:ml-28 opacity-20" />
         ))}
       </Marquee>
     </motion.div>

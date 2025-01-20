@@ -30,13 +30,13 @@ const About = () => {
     };
   }, []);
   return (
-    <div className="px-48 flex justify-between mt-72 items-center">
-      <motion.div className="flex flex-col gap-10 w-[40%]">
+    <div className="sm:px-48 px-16 sm:flex justify-between mt-72 items-center">
+      <motion.div className="flex flex-col gap-10 w-full ">
         <motion.span
           ref={ref}
           initial={{ opacity: 0, y: 40 }} // Initial state before animation
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }} // Animate based on visibility
-          transition={{ duration: 1.4 }} // Duration of the animation
+          transition={{ duration: 0.9 }} // Duration of the animation
           className="text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic w-full"
         >
           About-me
@@ -45,8 +45,8 @@ const About = () => {
           ref={ref}
           initial={{ opacity: 0, y: -10 }} // Initial state before animation
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }} // Animate based on visibility
-          transition={{ duration: 1.4 }} // Duration of the animation
-          className="text-xl font-poppins font-normal italic text-white/50"
+          transition={{ duration: 0.9 }} // Duration of the animation
+          className="sm:text-xl font-poppins font-normal italic text-white/50"
         >
           Hi! I’m Samy, a passionate frontend mentor with a year of experience
           in web development. I specialize in HTML, CSS, JavaScript, and
@@ -55,16 +55,16 @@ const About = () => {
         </motion.p>
       </motion.div>
 
-      <img src={myself} alt="" className="w-[40%]" />
       <NumberCounter />
       <motion.span
         ref={ref}
         initial={{ opacity: 0, x: 200 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 200 }} // Animate based on visibility
-        transition={{ duration: 2 }} // Duration of the animation
-        className="absolute text-white text-xl font-poppins mt-[690px] ml-[1100px] italic"
+        transition={{ duration: 0.9 }} // Duration of the animation
+        className="absolute flex gap-16 text-white sm:text-xl font-poppins sm:mt-[690px] sm:ml-[1100px] italic items-center"
       >
-        year of <br /> experience
+        <p></p>year of <br /> experience
+        <img src={myself} alt="" className="sm:w-[40%] w-[50%] mt-10 " />
       </motion.span>
     </div>
   );

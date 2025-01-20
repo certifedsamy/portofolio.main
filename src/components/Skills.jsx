@@ -40,9 +40,9 @@ const Skills = () => {
       </motion.span>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, y: 140 }} // Initial state before animation
-        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 140 }} // Animate based on visibility
-        transition={{ duration: 1.4 }} // Duration of the animation
+        initial={{ opacity: 0, y: 100 }} // Initial state before animation
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }} // Animate based on visibility
+        transition={{ duration: 1 }} // Duration of the animation
         className="sm:w-[80%] flex flex-wrap gap-10"
       >
         {skills.map((s, i) => (

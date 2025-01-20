@@ -36,7 +36,7 @@ const Offers = () => {
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-      transition={{ duration: 1.2, delay: 1.5 }}
+      transition={{ duration: 1, delay: 0.5 }}
       className=" px-10 sm:px-48 mt-32 flex flex-col sm:grid sm:gap-12 sm:grid-cols-4 pb-10 font-poppins"
     >
       {offers.map((o, i) => (
@@ -44,7 +44,7 @@ const Offers = () => {
           <img
             src={o.img}
             alt=""
-            className="relative hover:scale-110 transition-all duration-500 mb-5 sm:mb-0"
+            className="relative hover:scale-110 transition-all duration-500 mb-5 sm:mb-0 h-auto"
           />
           <span className="absolute p-5 text-white text-3xl sm:text-xl sm:py-8 sm:w-[80%] w-auto rounded-xl sm:px-8 sm:bottom-0 bg-black bg-opacity-5 sm:mb-0 backdrop-blur-md sm:transform sm:translate-y-full sm:transition-transform sm:duration-300 sm:group-hover:-translate-y-5">
             {o.domain}{" "}

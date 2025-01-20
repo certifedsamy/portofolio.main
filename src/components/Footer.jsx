@@ -3,7 +3,7 @@ import logo from "../assets/icons/logo.png";
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto sm:py-44 py-24 sm:px-20 fixed bg-[#d3aa85] z-10 bottom-0 h-[500px] flex items-center gap-10">
+    <div className="w-full h-auto sm:py-44 py-36 sm:px-20 fixed bg-[#d3aa85] z-10 bottom-0 h-[500px] flex items-center gap-10">
       <div className="space-x-10">
         {" "}
         <div className="flex items-center">

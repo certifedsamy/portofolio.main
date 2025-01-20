@@ -62,7 +62,7 @@ const NumberCounter = () => {
       initial={{ opacity: 0, y: 50 }} // Initial state before animation
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }} // Animate based on visibility
       transition={{ duration: 0.9, delay: 0.2 }} // Duration of the animation
-      className="sm:text-[350px] text-9xl font-bold text-center overflow-hidden text-[#d3aa85] absolute sm:ml-[900px] sm:mt-[450px] mt-36"
+      className="absolute ml-[230px] -mt-20 sm:text-[350px] text-9xl font-bold text-center overflow-hidden text-[#d3aa85] absolute sm:ml-[900px] sm:mt-[450px] mt-0"
     >
       <div ref={numberRef} className="">
         0

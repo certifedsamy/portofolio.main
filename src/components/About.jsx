@@ -30,7 +30,7 @@ const About = () => {
     };
   }, []);
   return (
-    <div className="sm:px-48 px-16 sm:flex justify-between mt-72 items-center">
+    <div className="sm:px-48 px-16 sm:flex justify-between mt-80 sm:mt-[500px] items-center ">
       <motion.div className="flex flex-col gap-10 w-full ">
         <motion.span
           ref={ref}
@@ -54,17 +54,20 @@ const About = () => {
           responsive designs
         </motion.p>
       </motion.div>
-
+      <img
+        src={myself}
+        alt=""
+        className="sm:w-[40%] w-[50%] mt-10 rounded-[60px]"
+      />
       <NumberCounter />
       <motion.span
         ref={ref}
         initial={{ opacity: 0, x: 200 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 200 }} // Animate based on visibility
         transition={{ duration: 0.9 }} // Duration of the animation
-        className="absolute flex gap-16 text-white sm:text-xl font-poppins sm:mt-[690px] sm:ml-[1100px] italic items-center"
+        className="absolute flex gap-16 text-white sm:text-xl font-poppins sm:mt-[690px] sm:ml-[1100px] ml-60 -mt-20 italic items-center"
       >
         <p></p>year of <br /> experience
-        <img src={myself} alt="" className="sm:w-[40%] w-[50%] mt-10 " />
       </motion.span>
     </div>
   );

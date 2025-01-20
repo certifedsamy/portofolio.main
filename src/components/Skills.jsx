@@ -28,7 +28,7 @@ const Skills = () => {
     };
   }, []);
   return (
-    <div className="sm:flex justify-between sm:px-48 sm:py-72 mt-[500px] px-16 pb-40">
+    <div className="sm:flex justify-between sm:px-48 sm:pb-72 mt-[210px] sm:mt-[250px] px-16 pb-40 ">
       <motion.span
         ref={ref}
         initial={{ opacity: 0, y: -140 }} // Initial state before animation

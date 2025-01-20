@@ -52,7 +52,7 @@ const Passion = () => {
   }, []);
 
   return (
-    <div className="flex flex-col sm:gap-5 gap-2 sm:pt-60 py-80 sm:ml-48 px-16 ">
+    <div className="flex flex-col sm:gap-5 gap-2 sm:pt-60 py-80 sm:py-[600px] sm:ml-48 px-16 ">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }} // Initial state before animation
@@ -76,7 +76,7 @@ const Passion = () => {
         initial={{ opacity: 0, y: 40 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }} // Animate based on visibility
         transition={{ duration: 1.2, delay: 1.2 }} // Duration of the animation
-        className="font-poppins font-medium text-center"
+        className="font-poppins font-medium text-center sm:text-start"
       >
         <h1 className=" text-lg sm:text-5xl text-[#9d9d9d] italic">
           Looking for collaboration

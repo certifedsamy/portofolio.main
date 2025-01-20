@@ -35,7 +35,7 @@ const Slider = () => {
       initial={{ opacity: 0, x: 40 }} // Initial state before animation
       animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }} // Animate based on visibility
       transition={{ duration: 1.4 }} // Duration of the animation
-      className="py-28 w-[74.5%] flex sm:gap-28 gap-10 absolute sm:ml-48 pl-16 w-full"
+      className="py-28 sm:py-60 w-[74.5%] flex sm:gap-28 gap-10 absolute sm:ml-48 pl-16 w-full"
     >
       <span className="text-3xl sm:text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic">
         Clients

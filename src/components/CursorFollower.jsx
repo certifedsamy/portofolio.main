@@ -39,7 +39,7 @@ const CursorFollower = () => {
   return (
     <div
       ref={followerRef}
-      className=" absolute w-10 h-10 bg-transparent rounded-full pointer-events-none border"
+      className=" sm:absolute sm:w-10 sm:h-10 bg-transparent rounded-full pointer-events-none sm:border"
       style={{ transition: "transform 0.1s ease" }}
     />
   );

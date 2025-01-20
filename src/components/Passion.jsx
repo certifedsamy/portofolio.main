@@ -52,7 +52,7 @@ const Passion = () => {
   }, []);
 
   return (
-    <div className="flex flex-col sm:gap-5 gap-2 sm:pt-60 pt-40 sm:ml-48 p-16">
+    <div className="flex flex-col sm:gap-5 gap-2 sm:pt-60 py-80 sm:ml-48 px-16 ">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }} // Initial state before animation

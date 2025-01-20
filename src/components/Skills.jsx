@@ -28,11 +28,11 @@ const Skills = () => {
     };
   }, []);
   return (
-    <div className="sm:flex justify-between sm:px-48 sm:py-72 mt-[500px] px-16">
+    <div className="sm:flex justify-between sm:px-48 sm:py-72 mt-[500px] px-16 pb-40">
       <motion.span
         ref={ref}
-        initial={{ opacity: 0, x: -140 }} // Initial state before animation
-        animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -140 }} // Animate based on visibility
+        initial={{ opacity: 0, y: -140 }} // Initial state before animation
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -140 }} // Animate based on visibility
         transition={{ duration: 1.4 }} // Duration of the animation
         className="sm:text-3xl text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic"
       >
@@ -40,13 +40,13 @@ const Skills = () => {
       </motion.span>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, x: 140 }} // Initial state before animation
-        animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 140 }} // Animate based on visibility
+        initial={{ opacity: 0, y: 140 }} // Initial state before animation
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 140 }} // Animate based on visibility
         transition={{ duration: 1.4 }} // Duration of the animation
         className="sm:w-[80%] flex flex-wrap gap-10"
       >
         {skills.map((s, i) => (
-          <div className="mt-10 pb-10 h-auto flex flex-col gap-5 sm:w-[30%] w-[40%] items-start">
+          <div className="mt-10 h-auto flex flex-col gap-5 sm:w-[30%] w-[40%] items-start">
             <img src={s.img} alt="" className="h-10" />
             <span className="sm:text-2xl text-xl font-poppins font-semibold text-white">
               {s.title}

@@ -25,31 +25,38 @@ export const offers = [
   {
     img: pen,
     domain: "Simple designs",
+    alt: "Image 1",
   },
   {
     img: casque,
     domain: "Comic designs",
+    alt: "Image 2",
   },
   {
     img: cartevisa,
     domain: "Bank designs",
+    alt: "Image 3",
   },
   {
     img: jordan1,
     domain: "Shoe markets",
+    alt: "Image 4",
   },
   {
     img: journal,
     domain: "News letter",
+    alt: "Image 5",
   },
 
   {
     img: market,
     domain: "E-com shop",
+    alt: "Image 6",
   },
   {
     img: iphone,
     domain: "Mobile apps",
+    alt: "Image 7",
   },
 ];
 

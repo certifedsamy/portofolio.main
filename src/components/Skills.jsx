@@ -34,7 +34,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: -140 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -140 }} // Animate based on visibility
         transition={{ duration: 1.4 }} // Duration of the animation
-        className="sm:text-3xl text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic"
+        className="sm:text-3xl text-3xl font-poppins font-semibold text-[#d3aa85] w-auto italic"
       >
         Offers
       </motion.span>
@@ -43,10 +43,10 @@ const Skills = () => {
         initial={{ opacity: 0, y: 100 }} // Initial state before animation
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }} // Animate based on visibility
         transition={{ duration: 1 }} // Duration of the animation
-        className="sm:w-[80%] flex flex-wrap gap-10"
+        className="sm:w-[80%] flex flex-wrap gap-10 w-full"
       >
         {skills.map((s, i) => (
-          <div className="mt-10 h-auto flex flex-col gap-5 sm:w-[30%] w-[40%] items-start">
+          <div className="mt-10 h-auto flex flex-col gap-1 sm:w-[30%] w-full items-start">
             <img src={s.img} alt="" className="h-10" />
             <span className="sm:text-2xl text-xl font-poppins font-semibold text-white">
               {s.title}

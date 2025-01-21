@@ -34,8 +34,8 @@ const About = () => {
       <motion.div className="flex flex-col gap-10 w-full ">
         <motion.span
           ref={ref}
-          initial={{ opacity: 0, y: 100 }} // Initial state before animation
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }} // Animate based on visibility
+          initial={{ opacity: 0, y: 50 }} // Initial state before animation
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on visibility
           transition={{ duration: 0.5 }} // Duration of the animation
           className="text-3xl font-poppins font-semibold text-[#d3aa85] w-[20%] italic w-full"
         >
@@ -43,8 +43,8 @@ const About = () => {
         </motion.span>
         <motion.p
           ref={ref}
-          initial={{ opacity: 0, y: 100 }} // Initial state before animation
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }} // Animate based on visibility
+          initial={{ opacity: 0, y: 50 }} // Initial state before animation
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on visibility
           transition={{ duration: 0.8 }} // Duration of the animation
           className="sm:text-xl text-xl font-poppins font-normal italic text-white/50 "
         >

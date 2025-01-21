@@ -45,11 +45,9 @@ const Offers = () => {
             key={index}
             src={o.img}
             alt={o.alt || `Image ${index + 1} `}
-            className={`relative mb-3 sm:mb-0 ${
-              index === 0 ? "rounded-t-[30px]" : ""
-            } 
+            className={`mb-3 sm:mb-0 ${index === 0 ? "rounded-t-[30px]" : ""} 
             ${index === 6 ? "rounded-b-[30px]" : ""} 
-            sm:hover:scale-110 sm:transition-all sm:duration-500`}
+            sm:hover:scale-110 sm:transition-all sm:duration-500 w-full h-auto object-cover`}
           />
           <span className="absolute p-5 text-white text-3xl sm:text-xl sm:py-8 sm:w-[80%] w-auto rounded-xl sm:px-8 sm:bottom-0 bg-black bg-opacity-5 sm:mb-0 backdrop-blur-md sm:transform sm:translate-y-full sm:transition-transform sm:duration-300 sm:group-hover:-translate-y-5">
             {o.domain}{" "}
